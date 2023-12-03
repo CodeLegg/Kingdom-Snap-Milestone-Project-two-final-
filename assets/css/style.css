@@ -21,3 +21,41 @@
     background-position: center;
     background-size: cover;
   }
+
+  /* ====================== LOADING SCREEN & BUTTONS  ====================== */
+
+/* LOADING CONTAINER */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+  }
+  
+  .loading-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    max-width: 40rem;
+    margin-bottom: 10rem;
+  }
+  
+  .loading-text-img {
+    width: 100%;
+  }
+  
+  .loading-progress-bar {
+    background: var(--ketchup);
+    border-radius: var(--bar-radius);
+    overflow: hidden;
+    width: 80%;
+  }
+  
+  .loading-bar {
+    animation: loader 8s ease forwards;
+    background: var(--mustard);
+    padding: var(--bar-size);
+    width: 0;
+  }
