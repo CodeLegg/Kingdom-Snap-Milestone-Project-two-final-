@@ -23,8 +23,6 @@ function flipCard() {
   secondCard = this;
 
   checkForMatch();
-
-  resetBoard();
 }
 
 function checkForMatch() {
