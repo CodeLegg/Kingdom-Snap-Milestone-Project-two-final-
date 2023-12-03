@@ -19,7 +19,7 @@ function flipCard() {
   }
 
   // second click
-  hasFlippedCard = false;
+  resetBoard();
   secondCard = this;
 
   checkForMatch();
@@ -35,6 +35,9 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
+
+  resetBoard();
+
 }
 
 function unflipCards() {
