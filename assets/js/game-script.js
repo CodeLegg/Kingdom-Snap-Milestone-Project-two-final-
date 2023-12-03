@@ -19,14 +19,15 @@ function flipCard() {
   }
 
   // second click
-  resetBoard();
+
   secondCard = this;
 
   checkForMatch();
+
+  resetBoard();
 }
 
 function checkForMatch() {
-  // do cards match?
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
   isMatch ? disableCards() : unflipCards();
