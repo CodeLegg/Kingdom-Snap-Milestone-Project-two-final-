@@ -226,3 +226,7 @@
   border: solid 3px var(--mustard);
   backface-visibility: hidden;
 }
+
+.front-face {
+    transform: rotateY(180deg);
+  }
