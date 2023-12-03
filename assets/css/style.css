@@ -151,3 +151,11 @@
     cursor: pointer;
     margin-top: 50px;
   }
+
+  .leaderboard-button {
+    width: 100px;
+    height: 47px;
+    background: url("../images/kingdom-snap-leaderboard.png") no-repeat; /* Set the image as the background */
+    background-size: cover;
+    cursor: pointer;
+  }
