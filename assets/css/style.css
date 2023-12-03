@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /* COLOUR VARIABLES */
+  :root {
+    --mustard: #f6a916;
+    --ketchup: #851d11;
+    --gray-light: #eef1f3;
+    --bar-size: 10px;
+    --bar-radius: 60px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("../images/castle-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
