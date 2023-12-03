@@ -219,12 +219,14 @@
 .back-face {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 5px;
   position: absolute;
-  border-radius: 20px;
+  border-radius: 10px;
   background: var(--ketchup);
   border: solid 3px var(--mustard);
   backface-visibility: hidden;
+  object-fit: contain;
+
 }
 
 .front-face {
