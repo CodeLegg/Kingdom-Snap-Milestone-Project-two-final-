@@ -231,3 +231,78 @@ body {
 .front-face {
   transform: rotateY(180deg);
 }
+
+.rightcontainer {
+    display: flex;
+    height: 100%;
+}
+.leftcontainer {
+    display: flex;
+    height: 100%;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .timer {
+    font-size: 20px;
+    width: 75px;
+    border-radius: 10px;
+    border: solid 3px var(--ketchup);
+    background-color: #eef1f3;
+    text-align: center;  
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .infobutton {
+    background-image: url("../images/info-button-round-square.png");
+    width: 60px;
+    height: 65px;
+    background-size: cover;
+    cursor: pointer;
+    text-align: center;  
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  .volumeon {
+    width: 60px;
+    height: 65px;
+    background: url("../images/volume-button-round-square.png") no-repeat; /* Set the image as the background */
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  
+  .volumeoff {
+    width: 60px;
+    height: 65px;
+    background: url("../images/mute-button-round-square.png") no-repeat; /* Set the image as the background */
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: none;
+  }
+
+  .backbutton {
+    background-image: url("../images/back-button-round-square.png");
+    width: 60px;
+    height: 65px;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
