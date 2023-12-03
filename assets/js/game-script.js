@@ -37,7 +37,6 @@ function disableCards() {
   secondCard.removeEventListener("click", flipCard);
 
   resetBoard();
-
 }
 
 function unflipCards() {
