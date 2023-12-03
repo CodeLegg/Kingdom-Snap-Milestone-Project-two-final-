@@ -1,221 +1,221 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  /* COLOUR VARIABLES */
-  :root {
-    --mustard: #f6a916;
-    --ketchup: #851d11;
-    --gray-light: #eef1f3;
-    --bar-size: 10px;
-    --bar-radius: 60px;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url("../images/castle-background.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* COLOUR VARIABLES */
+:root {
+  --mustard: #f6a916;
+  --ketchup: #851d11;
+  --gray-light: #eef1f3;
+  --bar-size: 10px;
+  --bar-radius: 60px;
+}
 
-  /* ====================== LOADING SCREEN & BUTTONS  ====================== */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("../images/castle-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ====================== LOADING SCREEN & BUTTONS  ====================== */
 
 /* LOADING CONTAINER */
 .loading-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000000;
-  }
-  
-  .loading-text-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    max-width: 40rem;
-    margin-bottom: 10rem;
-  }
-  
-  .loading-text-img {
-    width: 100%;
-  }
-  
-  .loading-progress-bar {
-    background: var(--ketchup);
-    border-radius: var(--bar-radius);
-    overflow: hidden;
-    width: 80%;
-  }
-  
-  .loading-bar {
-    animation: loader 8s ease forwards;
-    background: var(--mustard);
-    padding: var(--bar-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.loading-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  max-width: 40rem;
+  margin-bottom: 10rem;
+}
+
+.loading-text-img {
+  width: 100%;
+}
+
+.loading-progress-bar {
+  background: var(--ketchup);
+  border-radius: var(--bar-radius);
+  overflow: hidden;
+  width: 80%;
+}
+
+.loading-bar {
+  animation: loader 8s ease forwards;
+  background: var(--mustard);
+  padding: var(--bar-size);
+  width: 0;
+}
+
+/* ANIMATION */
+@keyframes loader {
+  0% {
     width: 0;
   }
-
-  /* ANIMATION */
-@keyframes loader {
-    0% {
-      width: 0;
-    }
-    20% {
-      width: 10%;
-    }
-    25% {
-      width: 24%;
-    }
-    43% {
-      width: 41%;
-    }
-    56% {
-      width: 50%;
-    }
-    66% {
-      width: 52%;
-    }
-    71% {
-      width: 60%;
-    }
-    75% {
-      width: 76%;
-    }
-    94% {
-      width: 86%;
-    }
-    100% {
-      width: 100%;
-    }
+  20% {
+    width: 10%;
   }
-
-  .button-container {
-    text-align: center; /* Centers the child element horizontally */
-    position: absolute;
+  25% {
+    width: 24%;
   }
-  .start-button {
-    width: 150px;
-    height: 70px;
-    background: url("../images/kingdom-snap-press-start.png") no-repeat; /* Set the image as the background */
-    background-size: cover;
-    cursor: pointer;
-    margin: auto;
-    margin-top: 10em;
+  43% {
+    width: 41%;
   }
-  
-  .hidden {
-    opacity: 0;
-    pointer-events: none;
+  56% {
+    width: 50%;
   }
-  
-  .fade-in {
-    opacity: 1;
-    transition: opacity 2s ease;
+  66% {
+    width: 52%;
   }
-
-  /* ====================== STARTSCREEN & BUTTONS  ====================== */
-.start-screen {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  71% {
+    width: 60%;
   }
-  
-  .game-logo {
-    max-width: 100%;
-    max-height: 100%;
+  75% {
+    width: 76%;
   }
-
-  .start-screen-button-container {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    margin-bottom: 2em;
+  94% {
+    width: 86%;
+  }
+  100% {
     width: 100%;
-    height: 20%;
-    gap: 10px;
   }
-  
-  .play-button {
-    width: 100px;
-    height: 47px;
-    background: url("../images/kingdom-snap-play-game.png") no-repeat; /* Set the image as the background */
-    background-size: cover;
-    cursor: pointer;
-    margin-top: 50px;
-  }
+}
 
-  .leaderboard-button {
-    width: 100px;
-    height: 47px;
-    background: url("../images/kingdom-snap-leaderboard.png") no-repeat; /* Set the image as the background */
-    background-size: cover;
-    cursor: pointer;
-  }
+.button-container {
+  text-align: center; /* Centers the child element horizontally */
+  position: absolute;
+}
+.start-button {
+  width: 150px;
+  height: 70px;
+  background: url("../images/kingdom-snap-press-start.png") no-repeat; /* Set the image as the background */
+  background-size: cover;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 10em;
+}
 
-  /* SOUND BUTTONS */
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+/* ====================== STARTSCREEN & BUTTONS  ====================== */
+.start-screen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.start-screen-button-container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 2em;
+  width: 100%;
+  height: 20%;
+  gap: 10px;
+}
+
+.play-button {
+  width: 100px;
+  height: 47px;
+  background: url("../images/kingdom-snap-play-game.png") no-repeat; /* Set the image as the background */
+  background-size: cover;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.leaderboard-button {
+  width: 100px;
+  height: 47px;
+  background: url("../images/kingdom-snap-leaderboard.png") no-repeat; /* Set the image as the background */
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* SOUND BUTTONS */
 .playsound-button {
-    width: 100px;
-    height: 47px;
-    background: url("../images/kingdom-snap-play-sound.png") no-repeat; /* Set the image as the background */
-    background-size: cover;
-    cursor: pointer;
-  }
-  
-  .mutesound-button {
-    width: 100px;
-    height: 47px;
-    background: url("../images/kingdom-snap-mute-sound.png") no-repeat; /* Set the image as the background */
-    background-size: cover;
-    cursor: pointer;
-    display: none;
-  }
+  width: 100px;
+  height: 47px;
+  background: url("../images/kingdom-snap-play-sound.png") no-repeat; /* Set the image as the background */
+  background-size: cover;
+  cursor: pointer;
+}
 
-  /* ====================== GAMEBOARD & CARDS  ====================== */
+.mutesound-button {
+  width: 100px;
+  height: 47px;
+  background: url("../images/kingdom-snap-mute-sound.png") no-repeat; /* Set the image as the background */
+  background-size: cover;
+  cursor: pointer;
+  display: none;
+}
+
+/* ====================== GAMEBOARD & CARDS  ====================== */
 .game-container {
-    height: 100vh;
-    display: flex;
-  }
-  .memory-game-container {
-    display: flex;
-    margin: auto;
-  }
+  height: 100vh;
+  display: flex;
+}
+.memory-game-container {
+  display: flex;
+  margin: auto;
+}
 
-  .memory-game {
-    width: 375px;
-    height: 350px;
-    display: flex;
-    flex-wrap: wrap;
-    perspective: 1000px;
-  }
-  
-  .memory-card {
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
-    position: relative;
-    margin: 5px;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform.5s;
-  }
+.memory-game {
+  width: 375px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
 
-  .memory-card:active {
-    transform: scale(0.97);
-    transition: transform 0.2s;
-  }
-  
-  .memory-card.flip {
-    transform: rotateY(180deg);
-  }
-  
-  .front-face,
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  position: relative;
+  margin: 5px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform.5s;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
 .back-face {
   width: 100%;
   height: 100%;
@@ -226,9 +226,8 @@
   border: solid 3px var(--mustard);
   backface-visibility: hidden;
   object-fit: contain;
-
 }
 
 .front-face {
-    transform: rotateY(180deg);
-  }
+  transform: rotateY(180deg);
+}
