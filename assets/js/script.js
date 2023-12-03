@@ -10,3 +10,12 @@ setTimeout(function () {
     // Add a class for initial styles (opacity: 1, transition: opacity 2s ease;)
     startButton.classList.add("fade-in");
   }, 8000);
+
+
+  const cards = document.querySelectorAll('.memory-card');
+
+  function flipCard() {
+    this.classList.toggle('flip');
+  }
+
+  cards.forEach(card => card.addEventListener('click', flipCard));
