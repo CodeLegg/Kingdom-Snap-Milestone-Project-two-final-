@@ -93,3 +93,27 @@
       width: 100%;
     }
   }
+
+  .button-container {
+    text-align: center; /* Centers the child element horizontally */
+    position: absolute;
+  }
+  .start-button {
+    width: 150px;
+    height: 70px;
+    background: url("../images/kingdom-snap-press-start.png") no-repeat; /* Set the image as the background */
+    background-size: cover;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 10em;
+  }
+  
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transition: opacity 2s ease;
+  }
