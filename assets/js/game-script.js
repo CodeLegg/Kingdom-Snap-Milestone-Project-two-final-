@@ -10,24 +10,22 @@ function flipCard() {
     // first click
     hasFlippedCard = true;
     firstCard = this;
-  } else {
-    // second click
-    hasFlippedCard = false;
-    secondCard = this;
 
-    checkForMatch();
+    return;
   }
+
+  // second click
+  hasFlippedCard = false;
+  secondCard = this;
+
+  checkForMatch();
 }
 
 function checkForMatch() {
   // do cards match?
-  if (firstCard.dataset.framework === secondCard.dataset.framework) {
-    // it's a match!
-    disableCards();
-  } else {
-    // not a match
-    unflipCards();
-  }
+  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+
+  isMatch ? disableCards() : unflipCards();
 }
 
 function disableCards() {
