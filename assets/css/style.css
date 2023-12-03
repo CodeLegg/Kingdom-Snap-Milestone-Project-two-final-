@@ -159,3 +159,21 @@
     background-size: cover;
     cursor: pointer;
   }
+
+  /* SOUND BUTTONS */
+.playsound-button {
+    width: 100px;
+    height: 47px;
+    background: url("../images/kingdom-snap-play-sound.png") no-repeat; /* Set the image as the background */
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  .mutesound-button {
+    width: 100px;
+    height: 47px;
+    background: url("../images/kingdom-snap-mute-sound.png") no-repeat; /* Set the image as the background */
+    background-size: cover;
+    cursor: pointer;
+    display: none;
+  }
