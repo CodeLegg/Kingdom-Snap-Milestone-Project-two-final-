@@ -181,13 +181,27 @@
   /* ====================== GAMEBOARD & CARDS  ====================== */
 .game-container {
     height: 100vh;
-    background-image: url("../images/castle-background.png");
-    background-position: center;
-    background-size: cover;
-    z-index: 999;
     display: flex;
   }
   .memory-game-container {
     display: flex;
     margin: auto;
+  }
+
+  .memory-game {
+    width: 1200px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+  
+  .memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform.5s;
   }
