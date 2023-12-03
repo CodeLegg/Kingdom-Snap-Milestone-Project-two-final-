@@ -5,6 +5,8 @@ let lockBoard = false;
 let firstCard, secondCard;
 
 function flipCard() {
+if (lockBoard) return;
+
   this.classList.add("flip");
 
   if (!hasFlippedCard) {
