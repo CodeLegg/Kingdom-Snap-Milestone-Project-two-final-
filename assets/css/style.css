@@ -177,3 +177,17 @@
     cursor: pointer;
     display: none;
   }
+
+  /* ====================== GAMEBOARD & CARDS  ====================== */
+.game-container {
+    height: 100vh;
+    background-image: url("../images/castle-background.png");
+    background-position: center;
+    background-size: cover;
+    z-index: 999;
+    display: flex;
+  }
+  .memory-game-container {
+    display: flex;
+    margin: auto;
+  }
