@@ -304,164 +304,161 @@ body {
 /* ====================== INFO MODAL  ====================== */
 
 .modal-container {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-  }
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
 
 .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.918);
-    z-index: 1000;
-  }
-  
-  .modal-content {
-    background-image: url("../images/modal-content.png"); /* Add your custom background image */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 42% auto;
-    padding: 20px;
-    border-radius: 100px;
-    width: 100%;
-    height: 50%;
-    justify-content: center;
-    z-index: 1000;
-  }
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.918);
+  z-index: 1000;
+}
 
-  .show-modal {
-    display: block;
-  }
+.modal-content {
+  background-image: url("../images/modal-content.png"); /* Add your custom background image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 42% auto;
+  padding: 20px;
+  border-radius: 100px;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  z-index: 1000;
+}
 
-  
+.show-modal {
+  display: block;
+}
+
 .congratulations-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.918);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-  
-  .congratulations-modal-content {
-    background-image: url("../images/congratulation-modal-content.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 90%;
-    height: 100%;
-    text-align: center;
-    position: relative;
-  }
-  
-  .congratulations-modal {
-    display: none;
-  }
-  
-  .congratulations-modal-content p {
-    font-size: small;
-    position: relative;
-    top: 305px;
-    color: var(--mustard);
-  }
-  
-  .congratulations-modal.open {
-    display: flex;
-  }
-  
-  .close {
-    color: #c50b0b;
-    position: absolute;
-    top: 105px;
-    right: 35px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    opacity: 0;
-  }
-  
-  
-  /* CONGRATULATIONS INPUT */
-  #playerName {
-    width: 50%;
-    margin-top: 290px;
-    padding: 5px;
-    border: solid 2px var(--mustard);
-    border-radius: 40px;
-    justify-items: center;
-    font-size: 10px;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-  }
-  
-  /* CONGRATULATIONS SUBMIT-BUTTON */
-  .submit-button {
-    width: 80px;
-    height: 39px;
-    background: url("../images/kingdom-snap-press-submit.png") no-repeat; /* Set the image as the background */
-    background-size: cover;
-    cursor: pointer;
-    margin: auto;
-    margin-top: 5px;
-  }
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.918);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
-  .open {
-    display: block;
-  }
+.congratulations-modal-content {
+  background-image: url("../images/congratulation-modal-content.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Page Title */
-  .main-title {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .page-title {
-    color: #333;
-  }
-  
-  /* Leaderboard Table */
-  #leaderboard-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  #leaderboard-table th, #leaderboard-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  #leaderboard-table th {
-    background-color: #f2f2f2;
-  }
-  #leaderboard-table td {
-    background-color: #f2f2f2;
-    color: black;
-  }
+.congratulations-modal {
+  display: none;
+}
 
+.congratulations-modal-content p {
+  font-size: small;
+  position: relative;
+  top: 305px;
+  color: var(--mustard);
+}
 
-  
-  #leaderboard-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  #leaderboard-table tbody tr:hover {
-    background-color: #e6e6e6;
-  }
+.congratulations-modal.open {
+  display: flex;
+}
+
+.close {
+  color: #c50b0b;
+  position: absolute;
+  top: 105px;
+  right: 35px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* CONGRATULATIONS INPUT */
+#playerName {
+  width: 50%;
+  margin-top: 290px;
+  padding: 5px;
+  border: solid 2px var(--mustard);
+  border-radius: 40px;
+  justify-items: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+/* CONGRATULATIONS SUBMIT-BUTTON */
+.submit-button {
+  width: 80px;
+  height: 39px;
+  background: url("../images/kingdom-snap-press-submit.png") no-repeat; /* Set the image as the background */
+  background-size: cover;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.open {
+  display: block;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Page Title */
+.main-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  color: #333;
+}
+
+/* Leaderboard Table */
+#leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#leaderboard-table th,
+#leaderboard-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+#leaderboard-table th {
+  background-color: #f2f2f2;
+}
+#leaderboard-table td {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+#leaderboard-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#leaderboard-table tbody tr:hover {
+  background-color: #e6e6e6;
+}
