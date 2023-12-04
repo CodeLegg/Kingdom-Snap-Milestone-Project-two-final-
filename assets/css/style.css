@@ -561,6 +561,11 @@ body {
 
   
 }
+
+@media screen and (width: 1024px) and (height: 600px) {
+    /* Your specific styles for this screen size go here */
+  }
+
 @media only screen and (min-width: 1100px) and (max-width: 1899px) {
   .play-button {
     width: 250px;
