@@ -108,3 +108,26 @@ function updateTimerDisplay() {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//INFO MODAL SCRIPT
+
+const infoButton = document.getElementById("infobutton");
+const infoModal = document.getElementById("infoModal");
+const closeModal = document.getElementById("closemodal");
+
+// Show the modal when the info button is clicked
+infoButton.addEventListener("click", () => {
+  infoModal.classList.add("show-modal");
+});
+
+// Hide the modal if the user clicks outside of it
+window.addEventListener("click", (event) => {
+  if (event.target === infoModal) {
+    infoModal.classList.remove("show-modal");
+  }
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
