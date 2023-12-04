@@ -128,6 +128,61 @@ window.addEventListener("click", (event) => {
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ... (Your existing code)
 
+function openCongratulationsModal() {
+  const modal = document.getElementById("congratulations-modal");
+  const modalTime = document.getElementById("modal-time");
+  const playerNameInput = document.getElementById("playerName");
+  const submitButton = document.getElementById("submitTime");
 
+  // Set the modal time content
+  modalTime.textContent = `${minutes} minutes and ${seconds} seconds`;
+
+  // Display the modal
+  modal.classList.add("open");
+
+  // Handle the submit button click
+  submitButton.addEventListener("click", function () {
+    const playerName = playerNameInput.value.trim();
+
+    if (playerName !== "") {
+      // Save data to local storage
+      saveToLocalStorage(playerName, { minutes, seconds });
+
+      // Navigate to leaderboard.html
+      window.location.href = "leaderboard.html";
+    } else {
+      // Display an error or prompt the user to enter a name
+      alert("Please enter your name.");
+    }
+  });
+
+  // Close the modal when the close button is clicked
+  const closeModalButton = document.getElementById("close-congratulations-modal");
+  closeModalButton.addEventListener("click", function () {
+    modal.classList.remove("open");
+  });
+}
+
+// Function to save data to local storage
+function saveToLocalStorage(playerName, timeData) {
+  // Retrieve existing data or initialize an empty array
+  const leaderboardData = JSON.parse(localStorage.getItem("leaderboard")) || [];
+
+  // Add the new entry
+  leaderboardData.push({ playerName, time: timeData });
+
+  // Sort the leaderboard based on time (you may adjust the sorting logic)
+  leaderboardData.sort((a, b) => {
+    const timeA = a.time.minutes * 60 + a.time.seconds;
+    const timeB = b.time.minutes * 60 + b.time.seconds;
+    return timeA - timeB;
+  });
+
+  // Save the updated data back to local storage
+  localStorage.setItem("leaderboard", JSON.stringify(leaderboardData));
+}
+
+// ... (Your existing code)
 
