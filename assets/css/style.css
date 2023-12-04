@@ -629,9 +629,9 @@ body {
   }
 
   .congratulations-modal-content {
-  max-width: 1200px;
+    max-width: 1200px;
   }
-  
+
   .congratulations-modal-content p {
     font-size: xx-large;
     margin-top: 100px;
@@ -649,3 +649,55 @@ body {
     margin-top: 15px;
   }
 }
+
+@media only screen and (min-width: 667px) and (max-width: 1000px) and (orientation: landscape) {
+  .memory-game-container {
+    max-width: 400px; /* Ensure it doesn't exceed the viewport width */
+    width: 100%;
+    margin: auto;
+  }
+
+  .game-logo {
+    max-width: 300px;
+  }
+  .start-screen-button-container {
+    height: 10%;
+    margin-bottom: 2rem;
+  }
+
+  .play-button {
+    width: 95px;
+    height: 45px;
+  }
+
+  .leaderboard-button {
+    width: 95px;
+    height: 45px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1500px) and (orientation: landscape) {
+    .memory-game-container {
+      max-width: 1000px; /* Ensure it doesn't exceed the viewport width */
+      width: 100%;
+      margin: auto;
+    }
+  
+    .game-logo {
+      max-width: 600px;
+    }
+    .start-screen-button-container {
+      height: 20%;
+      margin-bottom: 2rem;
+    }
+  
+    .play-button {
+        width: 265px;
+        height: 124px;
+    }
+  
+    .leaderboard-button {
+        width: 265px;
+        height: 124px;
+    }
+  }
