@@ -137,46 +137,28 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  margin-bottom: 2em;
   width: 100%;
   height: 20%;
   gap: 10px;
+  margin-bottom: 2rem;
 }
 
 .play-button {
-  width: 100px;
-  height: 47px;
+  width: 150px;
+  height: 70px;
   background: url("../images/kingdom-snap-play-game.png") no-repeat; /* Set the image as the background */
   background-size: cover;
   cursor: pointer;
-  margin-top: 50px;
 }
 
 .leaderboard-button {
-  width: 100px;
-  height: 47px;
+    width: 150px;
+    height: 70px;
   background: url("../images/kingdom-snap-leaderboard.png") no-repeat; /* Set the image as the background */
   background-size: cover;
   cursor: pointer;
 }
 
-/* SOUND BUTTONS */
-.playsound-button {
-  width: 100px;
-  height: 47px;
-  background: url("../images/kingdom-snap-play-sound.png") no-repeat; /* Set the image as the background */
-  background-size: cover;
-  cursor: pointer;
-}
-
-.mutesound-button {
-  width: 100px;
-  height: 47px;
-  background: url("../images/kingdom-snap-mute-sound.png") no-repeat; /* Set the image as the background */
-  background-size: cover;
-  cursor: pointer;
-  display: none;
-}
 
 /* ====================== GAMEBOARD & CARDS  ====================== */
 .game-container {
@@ -293,7 +275,7 @@ body {
     position: absolute;
     top: 5px;
     left: 5px;
-    display: none;
+
   }
 
   .backbutton {
@@ -305,4 +287,18 @@ body {
     position: absolute;
     bottom: 5px;
     left: 5px;
+  }
+  /* .refreshbutton {
+    background-image: url("../images/refresh-round-square.png");
+    width: 60px;
+    height: 65px;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 9.8em;
+  } */
+
+  .visible {
+    display: block;
   }
