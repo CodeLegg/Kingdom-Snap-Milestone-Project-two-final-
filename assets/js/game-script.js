@@ -128,7 +128,6 @@ window.addEventListener("click", (event) => {
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// ... (Your existing code)
 
 function openCongratulationsModal() {
   const modal = document.getElementById("congratulations-modal");
@@ -159,7 +158,9 @@ function openCongratulationsModal() {
   });
 
   // Close the modal when the close button is clicked
-  const closeModalButton = document.getElementById("close-congratulations-modal");
+  const closeModalButton = document.getElementById(
+    "close-congratulations-modal"
+  );
   closeModalButton.addEventListener("click", function () {
     modal.classList.remove("open");
   });
@@ -183,6 +184,4 @@ function saveToLocalStorage(playerName, timeData) {
   // Save the updated data back to local storage
   localStorage.setItem("leaderboard", JSON.stringify(leaderboardData));
 }
-
-// ... (Your existing code)
 
