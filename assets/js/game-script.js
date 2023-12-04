@@ -106,3 +106,5 @@ function updateTimerDisplay() {
   const timerDisplay = document.getElementById("timer");
   timerDisplay.textContent = `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
