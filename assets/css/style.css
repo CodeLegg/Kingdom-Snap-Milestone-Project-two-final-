@@ -376,15 +376,21 @@ body {
 
 .congratulations-modal-content p {
   font-size: small;
-  position: relative;
-  top: 305px;
   color: var(--mustard);
+  margin-top: 50px;
 }
 
 .congratulations-modal.open {
   display: flex;
 }
 
+.input-container {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}   
 .close {
   color: #c50b0b;
   position: absolute;
@@ -399,15 +405,14 @@ body {
 /* CONGRATULATIONS INPUT */
 #playerName {
   width: 50%;
-  margin-top: 290px;
   padding: 5px;
   border: solid 2px var(--mustard);
   border-radius: 40px;
   justify-items: center;
-  font-size: 10px;
+  font-size: px;
   text-transform: uppercase;
   text-align: center;
-  position: relative;
+  margin-top: 5PX;
 }
 
 /* CONGRATULATIONS SUBMIT-BUTTON */
