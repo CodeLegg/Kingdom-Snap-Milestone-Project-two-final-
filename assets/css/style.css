@@ -162,21 +162,21 @@ body {
 .game-container {
   height: 100vh;
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .memory-game-container {
-  max-width: 1100px; /* Ensure it doesn't exceed the viewport width */
+  max-width: 100%; 
   width: 100%;
   margin: auto;
 }
 
 .memory-game {
-  max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+  max-width: 600px;
   width: 100%;
-  max-height: 100%; /* Ensure it doesn't exceed the viewport height */
-  height: auto;
+  max-height: 50%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
@@ -184,8 +184,8 @@ body {
 
 .memory-card {
   width: calc(25% - 10px);
-  height: auto; /* Adjusted to be responsive */
-  aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio */
+  height: auto; 
+  aspect-ratio: 1 / 1; 
   position: relative;
   margin: 5px;
   transform: scale(1);
@@ -262,7 +262,7 @@ body {
 .volumeon {
   width: 60px;
   height: 65px;
-  background: url("../images/volume-button-round-square.png") no-repeat; /* Set the image as the background */
+  background: url("../images/volume-button-round-square.png") no-repeat; 
   background-size: cover;
   cursor: pointer;
   position: absolute;
@@ -273,7 +273,7 @@ body {
 .volumeoff {
   width: 60px;
   height: 65px;
-  background: url("../images/mute-button-round-square.png") no-repeat; /* Set the image as the background */
+  background: url("../images/mute-button-round-square.png") no-repeat; 
   background-size: cover;
   cursor: pointer;
   position: absolute;
@@ -295,16 +295,7 @@ body {
   bottom: 5px;
   left: 5px;
 }
-/* .refreshbutton {
-    background-image: url("../images/refresh-round-square.png");
-    width: 60px;
-    height: 65px;
-    background-size: cover;
-    cursor: pointer;
-    position: absolute;
-    top: 50px;
-    left: 9.8em;
-  } */
+
 
 /* ====================== INFO MODAL  ====================== */
 
@@ -326,17 +317,16 @@ body {
 }
 
 .modal-content {
-  background-image: url("../images/modal-content.png"); /* Add your custom background image */
+  background-image: url("../images/modal-content.png"); 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   margin: auto;
-  padding: 20px;
   border-radius: 100px;
-  width: 100%;
+  width: 75%;
   height: 50%;
   justify-content: center;
-  z-index: 1000;
+  z-index: 1500;
 }
 
 .show-modal {
@@ -374,9 +364,9 @@ body {
 }
 
 .congratulations-modal-content p {
-  font-size: small;
+  font-size: 12px;
   color: var(--mustard);
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .congratulations-modal.open {
@@ -393,7 +383,7 @@ body {
 
 /* CONGRATULATIONS INPUT */
 #playerName {
-  width: 50%;
+  width: 60%;
   padding: 5px;
   border: solid 2px var(--mustard);
   border-radius: 40px;
@@ -408,8 +398,7 @@ body {
 .submit-button {
   width: 80px;
   height: 39px;
-  background: url("../images/kingdom-snap-press-submit.png") no-repeat; /* Set the image as the background */
-  background-size: cover;
+  background: url("../images/kingdom-snap-press-submit.png") no-repeat; 
   cursor: pointer;
   margin: auto;
   margin-top: 5px;
@@ -481,48 +470,100 @@ body {
 
 /* ====================== MEDIA QUERIES  ====================== */
 
-@media only screen and (max-width: 450px) {
+/* Small Devices (Portrait Phones and Small Tablets) */
+@media (min-width: 376px) and (max-width: 429px) {
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
+
   .congratulations-modal-content p {
-    font-size: medium;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+
+  #playerName {
+    width: 75%;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  .submit-button {
+    width: 80px;
+    height: 39px;
+    margin-top: 5px;
+  }
+}
+/* Small Devices (Portrait Phones and Small Tablets) */
+@media (min-width: 430px) and (max-width: 525px) {
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
+
+  .congratulations-modal-content p {
+    font-size: 14px;
     margin-top: 50px;
   }
 
   #playerName {
     width: 75%;
     font-size: 15px;
-    margin-top: 5px;
+    margin-top: 9px;
   }
 
   .submit-button {
-    width: 101px;
-    height: 49px;
-    margin-top: 5px;
+    width: 100px;
+    height: 48px;
+    margin-top: 9px;
   }
 }
-@media only screen and (min-width: 650px) {
-  .game-logo {
-    max-width: 650px;
-  }
+/* Small Devices (Portrait Phones and Small Tablets) */
+@media (min-width: 526px) and (max-width: 626px) {
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
 
   .congratulations-modal-content p {
-    font-size: large;
+    font-size: 18px;
+    margin-top: 60px;
+  }
+
+  #playerName {
+    width: 75%;
+    font-size: 17px;
+    margin-top: 9px;
+  }
+
+  .submit-button {
+    width: 130px;
+    height: 63px;
+    margin-top: 9px;
+  }
+}
+/* Small Devices (Portrait Phones and Small Tablets)  */
+@media (min-width: 627px) and (max-width: 767px) {
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
+
+  .congratulations-modal-content p {
+    font-size: 22px;
     margin-top: 70px;
   }
 
   #playerName {
     width: 75%;
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 8px;
+    padding: 10px;
   }
 
   .submit-button {
-    width: 146px;
-    height: 70px;
-    margin-top: 15px;
+    width: 150px;
+    height: 73px;
+    margin-top: 8px;
   }
 }
-/* Tablets (768px - 1023px) */
-@media only screen and (min-width: 768px) and (max-width: 1100px) {
+
+/* Medium Devices (Phones, Tablets, and Small Laptops) */
+@media (min-width: 768px) and (max-width: 860px) {
+  /* ====================== START-SCREEN BUTTONS ====================== */
+  .start-screen-button-container {
+    gap: 90px;
+    height: 17%;
+  }
+
   .play-button {
     width: 250px;
     height: 118px;
@@ -532,80 +573,251 @@ body {
     width: 250px;
     height: 118px;
   }
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
 
   .congratulations-modal-content p {
-    font-size: x-large;
-    margin-top: 90px;
-  }
-
-  #playerName {
-    max-width: 50%;
     font-size: 25px;
-    margin-top: 15px;
-  }
-
-  .submit-button {
-    width: 205px;
-    height: 100px;
-    margin-top: 15px;
-  }
-
-  .front-face,
-  .back-face {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    border-radius: 20px;
-    border: solid 6px var(--mustard);
-  }
-
-  
-}
-
-@media screen and (width: 1024px) and (height: 600px) {
-    /* Your specific styles for this screen size go here */
-  }
-
-@media only screen and (min-width: 1100px) and (max-width: 1899px) {
-  .play-button {
-    width: 250px;
-    height: 118px;
-  }
-
-  .leaderboard-button {
-    width: 250px;
-    height: 118px;
-  }
-
-  .congratulations-modal-content p {
-    font-size: xx-large;
     margin-top: 100px;
   }
 
   #playerName {
-    max-width: 50%;
-    font-size: 35px;
+    width: 75%;
+    font-size: 20px;
     margin-top: 15px;
+    padding: 14px;
   }
 
   .submit-button {
-    width: 256px;
-    height: 125px;
+    width: 180px;
+    height: 87px;
     margin-top: 15px;
   }
-
-  .front-face,
-  .back-face {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    border-radius: 20px;
-    border: solid 6px var(--mustard);
+}
+/* Medium Devices (Phones, Tablets, and Small Laptops) */
+@media (min-width: 861px) and (max-width: 1023px) {
+  /* ====================== START-SCREEN BUTTONS ====================== */
+  .start-screen-button-container {
+    gap: 90px;
+    height: 17%;
   }
 
-    .timer {
-  
+  .play-button {
+    width: 250px;
+    height: 118px;
+  }
 
+  .leaderboard-button {
+    width: 250px;
+    height: 118px;
+  }
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
+
+  .congratulations-modal-content {
+    max-width: 900px;
+  }
+
+  .congratulations-modal-content p {
+    font-size: 25px;
+    margin-top: 100px;
+  }
+
+  #playerName {
+    width: 75%;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 20px;
+  }
+
+  .submit-button {
+    width: 200px;
+    height: 97px;
+    margin-top: 15px;
+  }
+}
+
+/* Large Devices (Tablets, Laptops, and Desktops) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* ====================== START-SCREEN BUTTONS ====================== */
+  .start-screen-button-container {
+    gap: 90px;
+    height: 17%;
+  }
+
+  .play-button {
+    width: 250px;
+    height: 118px;
+  }
+
+  .leaderboard-button {
+    width: 250px;
+    height: 118px;
+  }
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
+
+  .congratulations-modal-content {
+    max-width: 900px;
+  }
+
+  .congratulations-modal-content p {
+    font-size: 25px;
+    margin-top: 100px;
+  }
+
+  #playerName {
+    width: 75%;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 20px;
+  }
+
+  .submit-button {
+    width: 200px;
+    height: 97px;
+    margin-top: 15px;
+  }
+}
+
+/* Extra Large Devices (Desktops) */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  /* ====================== START-SCREEN BUTTONS ====================== */
+  .start-screen-button-container {
+    gap: 90px;
+    height: 17%;
+  }
+
+  .play-button {
+    width: 250px;
+    height: 118px;
+  }
+
+  .leaderboard-button {
+    width: 250px;
+    height: 118px;
+  }
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
+
+  .congratulations-modal-content {
+    max-width: 900px;
+  }
+
+  .congratulations-modal-content p {
+    font-size: 25px;
+    margin-top: 100px;
+  }
+
+  #playerName {
+    width: 75%;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 20px;
+  }
+
+  .submit-button {
+    width: 200px;
+    height: 97px;
+    margin-top: 15px;
+  }
+}
+
+/* Ultra Large Devices (Larger Desktops and 4K Screens) */
+@media (min-width: 1440px) and (max-width: 1599px) {
+  /* ====================== START-SCREEN BUTTONS ====================== */
+  .start-screen-button-container {
+    gap: 90px;
+    height: 17%;
+  }
+
+  .play-button {
+    width: 250px;
+    height: 118px;
+  }
+
+  .leaderboard-button {
+    width: 250px;
+    height: 118px;
+  }
+
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
+
+  .congratulations-modal-content {
+    max-width: 900px;
+  }
+
+  .congratulations-modal-content p {
+    font-size: 25px;
+    margin-top: 100px;
+  }
+
+  #playerName {
+    width: 75%;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 20px;
+  }
+
+  .submit-button {
+    width: 200px;
+    height: 97px;
+    margin-top: 15px;
+  }
+}
+
+/* Extra Extra Large Devices */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  /* ====================== START-SCREEN BUTTONS ====================== */
+  .start-screen-button-container {
+    gap: 90px;
+    height: 17%;
+  }
+
+  .play-button {
+    width: 250px;
+    height: 118px;
+  }
+
+  .leaderboard-button {
+    width: 250px;
+    height: 118px;
+  }
+
+  .game-logo {
+    max-width: 700px;
+    max-height: 100%;
+  }
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
+
+  .congratulations-modal-content {
+    max-width: 900px;
+  }
+
+  .congratulations-modal-content p {
+    font-size: 25px;
+    margin-top: 100px;
+  }
+
+  #playerName {
+    width: 75%;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 20px;
+  }
+
+  .submit-button {
+    width: 200px;
+    height: 97px;
+    margin-top: 15px;
+  }
+  /* ====================== GAMEBOARD & CARDS  ====================== */
+
+  .memory-game {
+    max-width: 800px;
+    width: 100%;
+    max-height: 50%;
+  }
+
+  .timer {
+    width: 150px;
+    font-size: 60px;
     border-radius: 10px;
     border: solid 3px var(--ketchup);
     background-color: #eef1f3;
@@ -614,30 +826,171 @@ body {
   }
 
   .infobutton {
-
+    width: 120px;
+    height: 130px;
     top: 50px;
     right: 50px;
   }
   .volumeon {
-
+    width: 120px;
+    height: 130px;
     top: 50px;
     left: 50px;
   }
   .volumeoff {
- 
+    width: 120px;
+    height: 130px;
     top: 50px;
     left: 50px;
   }
   .backbutton {
- 
+    width: 120px;
+    height: 130px;
     bottom: 50px;
     left: 50px;
   }
-
 }
 
-/* 4K Screens (1440px and above) */
-@media only screen and (min-width: 1900px) {
+/* Extra Extra Extra Large Devices */
+@media (min-width: 1920px) and (max-width: 2239px) {
+  /* ====================== START-SCREEN BUTTONS ====================== */
+  .start-screen-button-container {
+    gap: 90px;
+    height: 17%;
+  }
+
+  .play-button {
+    width: 250px;
+    height: 118px;
+  }
+
+  .leaderboard-button {
+    width: 250px;
+    height: 118px;
+  }
+
+  .game-logo {
+    max-width: 700px;
+    max-height: 100%;
+  }
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
+
+  .congratulations-modal-content {
+    max-width: 900px;
+  }
+
+  .congratulations-modal-content p {
+    font-size: 25px;
+    margin-top: 100px;
+  }
+
+  #playerName {
+    width: 75%;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 20px;
+  }
+
+  .submit-button {
+    width: 200px;
+    height: 97px;
+    margin-top: 15px;
+  }
+
+  /* ====================== GAMEBOARD & CARDS  ====================== */
+
+  .memory-game {
+    max-width: 800px;
+    width: 100%;
+    max-height: 50%;
+  }
+
+  .timer {
+    width: 150px;
+    font-size: 60px;
+    border-radius: 10px;
+    border: solid 3px var(--ketchup);
+    background-color: #eef1f3;
+    bottom: 50px;
+    right: 50px;
+  }
+
+  .infobutton {
+    width: 120px;
+    height: 130px;
+    top: 50px;
+    right: 50px;
+  }
+  .volumeon {
+    width: 120px;
+    height: 130px;
+    top: 50px;
+    left: 50px;
+  }
+  .volumeoff {
+    width: 120px;
+    height: 130px;
+    top: 50px;
+    left: 50px;
+  }
+  .backbutton {
+    width: 120px;
+    height: 130px;
+    bottom: 50px;
+    left: 50px;
+  }
+}
+
+/* Extra Extra Extra Extra Large Devices */
+@media (min-width: 2240px) and (max-width: 2560px) {
+  /* ====================== START-SCREEN BUTTONS ====================== */
+  .start-screen-button-container {
+    gap: 90px;
+    height: 17%;
+  }
+
+  .play-button {
+    width: 250px;
+    height: 118px;
+  }
+
+  .leaderboard-button {
+    width: 250px;
+    height: 118px;
+  }
+
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
+
+  .congratulations-modal-content {
+    max-width: 900px;
+  }
+
+  .congratulations-modal-content p {
+    font-size: 25px;
+    margin-top: 100px;
+  }
+
+  #playerName {
+    width: 75%;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 20px;
+  }
+
+  .submit-button {
+    width: 200px;
+    height: 97px;
+    margin-top: 15px;
+  }
+
+  /* ====================== GAMEBOARD & CARDS  ====================== */
+
+  .memory-game {
+    max-width: 1200px;
+    width: 100%;
+    max-height: 50%;
+  }
+
   .timer {
     width: 150px;
     font-size: 60px;
@@ -673,130 +1026,195 @@ body {
     bottom: 50px;
     left: 50px;
   }
+}
+
+/* Laptops - 1366px */
+@media (min-width: 1000px) and (max-width: 1440px) {
+  /* ====================== START-SCREEN BUTTONS ====================== */
   .start-screen-button-container {
-    gap: 90px;
+    gap: 40px;
     height: 17%;
   }
-  .play-button {
-    width: 400px;
-    height: 188px;
-  }
-
-  .memory-game-container {
-    max-width: 1500px; /* Ensure it doesn't exceed the viewport width */
-    margin: auto;
-  }
-
-  .front-face,
-  .back-face {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    border-radius: 20px;
-    border: solid 6px var(--mustard);
-  }
-  .leaderboard-button {
-    width: 400px;
-    height: 188px;
-  }
-
-  .congratulations-modal-content {
-    max-width: 1200px;
-  }
-
-  .congratulations-modal-content p {
-    font-size: xx-large;
-    margin-top: 100px;
-  }
-
-  #playerName {
-    max-width: 50%;
-    font-size: 35px;
-    margin-top: 15px;
-  }
-
-  .submit-button {
-    width: 256px;
-    height: 125px;
-    margin-top: 15px;
-  }
-
-  .start-button {
-    width: 265px;
-    height: 125px;
-    margin-top: 15em;
-  }
-
-  .loading-text-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    max-width: 60rem;
-    margin-bottom: 18rem;
-  }
-
-  .loading-bar {
-    animation: loader 8s ease forwards;
-    background: var(--mustard);
-    padding: 20px;
-    width: 0;
-  }
-
-  .game-logo {
-    max-width: 100%;
-    max-height: 100%;
-  }
-}
-
-@media only screen and (min-width: 667px) and (max-width: 1000px) and (orientation: landscape) {
-  .memory-game-container {
-    max-width: 400px; /* Ensure it doesn't exceed the viewport width */
-    width: 100%;
-    margin: auto;
-  }
-
-  .game-logo {
-    max-width: 300px;
-  }
-  .start-screen-button-container {
-    height: 10%;
-    margin-bottom: 2rem;
-  }
 
   .play-button {
-    width: 95px;
-    height: 45px;
+    width: 250px;
+    height: 118px;
   }
 
   .leaderboard-button {
-    width: 95px;
-    height: 45px;
-  }
-}
-
-/* @media only screen and (max-width: 1500px) and (orientation: landscape) {
-  .memory-game-container {
-    max-width: 1000px; 
-    width: 100%;
-    margin: auto;
+    width: 250px;
+    height: 118px;
   }
 
   .game-logo {
     max-width: 600px;
+    max-height: 100%;
   }
+  /* ====================== GAMEBOARD & CARDS  ====================== */
+  .memory-game {
+    max-width: 600px;
+    max-height: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1440px) {
+  /* ====================== START-SCREEN BUTTONS ====================== */
   .start-screen-button-container {
-    height: 20%;
-    margin-bottom: 2rem;
+    gap: 40px;
+    height: 17%;
   }
 
   .play-button {
-    width: 265px;
-    height: 124px;
+    width: 250px;
+    height: 118px;
   }
 
   .leaderboard-button {
-    width: 265px;
-    height: 124px;
+    width: 250px;
+    height: 118px;
   }
-} */
+
+  .game-logo {
+    max-width: 600px;
+    max-height: 100%;
+  }
+  /* ====================== GAMEBOARD & CARDS  ====================== */
+  .memory-game {
+    max-width: 600px;
+    max-height: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+}
+
+/* Larger Screens (Above Common Resolutions) */
+@media (min-width: 2561px) {
+  /* ====================== START-SCREEN BUTTONS ====================== */
+  .start-screen-button-container {
+    gap: 90px;
+    height: 17%;
+  }
+
+  .play-button {
+    width: 250px;
+    height: 118px;
+  }
+
+  .leaderboard-button {
+    width: 250px;
+    height: 118px;
+  }
+
+  /* ====================== CONGRATULATIONS MODAL  ====================== */
+
+  .congratulations-modal-content {
+    max-width: 900px;
+  }
+
+  .congratulations-modal-content p {
+    font-size: 25px;
+    margin-top: 100px;
+  }
+
+  #playerName {
+    width: 75%;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 20px;
+  }
+
+  .submit-button {
+    width: 200px;
+    height: 97px;
+    margin-top: 15px;
+  }
+  /* ====================== GAMEBOARD & CARDS  ====================== */
+
+  .memory-game {
+    max-width: 1200px;
+    max-height: 50%;
+  }
+
+  .timer {
+    width: 150px;
+    font-size: 60px;
+    border-radius: 10px;
+    border: solid 3px var(--ketchup);
+    background-color: #eef1f3;
+    bottom: 50px;
+    right: 50px;
+  }
+
+  .infobutton {
+    width: 120px;
+    height: 130px;
+    top: 50px;
+    right: 50px;
+  }
+  .volumeon {
+    width: 120px;
+    height: 130px;
+    top: 50px;
+    left: 50px;
+  }
+  .volumeoff {
+    width: 120px;
+    height: 130px;
+    top: 50px;
+    left: 50px;
+  }
+  .backbutton {
+    width: 120px;
+    height: 130px;
+    bottom: 50px;
+    left: 50px;
+  }
+}
+
+/* Landscape Orientation for Mobile and Tablets */
+@media only screen and (max-device-width: 768px) /* Max width for tablets and small screens */ and (orientation: landscape) {
+  .game-logo {
+    max-width: 300px;
+    max-height: 100%;
+  }
+
+  .start-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .start-screen-button-container {
+    height: 10%;
+  }
+
+  .play-button {
+    width: 100px;
+    height: 47px;
+  }
+
+  .leaderboard-button {
+    width: 100px;
+    height: 47px;
+  }
+
+  .memory-game {
+    max-width: 400px;
+    width: 100%;
+    max-height: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+
+  .modal-content {
+    height: 75%;
+  }
+}
