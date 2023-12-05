@@ -1,3 +1,4 @@
+// jshint esversion: 6
 function saveToLeaderboard(playerName, time) {
   // Retrieve existing data from local storage or initialize with an empty array
   const leaderboardData = JSON.parse(localStorage.getItem("leaderboard")) || [];

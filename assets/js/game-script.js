@@ -1,3 +1,4 @@
+// jshint esversion: 6
 const cards = document.querySelectorAll(".memory-card");
 
 let hasFlippedCard = false;
@@ -120,7 +121,6 @@ function updateTimerDisplay() {
 
 const infoButton = document.getElementById("infobutton");
 const infoModal = document.getElementById("infoModal");
-const closeModal = document.getElementById("closemodal");
 
 // Show the modal when the info button is clicked
 infoButton.addEventListener("click", () => {

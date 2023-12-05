@@ -1,3 +1,4 @@
+// jshint esversion: 6
 let isSoundPlaying = false;
 
 function updateButtonDisplay() {
@@ -36,4 +37,4 @@ var volumeOff = document.getElementById("volumeoff");
 updateButtonDisplay();
 
 volumeOn.addEventListener("click", toggleSound);
-volumeOff.addEventListener("click", toggleSound); // No need to handle mute separately here
+volumeOff.addEventListener("click", toggleSound); 

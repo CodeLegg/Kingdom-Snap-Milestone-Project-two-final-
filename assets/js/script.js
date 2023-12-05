@@ -1,3 +1,4 @@
+// jshint esversion: 6
 const startButton = document.getElementById("start-button");
 
 // Add a class for initial styles (opacity: 0, pointer-events: none)

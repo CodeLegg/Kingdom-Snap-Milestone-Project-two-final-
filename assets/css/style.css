@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* font-family: 'Roboto', sans-serif; */
 }
 /* COLOUR VARIABLES */
 :root {
@@ -326,7 +327,7 @@ body {
   width: 75%;
   height: 50%;
   justify-content: center;
-  z-index: 1500;
+  
 }
 
 .show-modal {
@@ -363,6 +364,17 @@ body {
   display: none;
 }
 
+.close {
+    color: #c50b0b;
+    position: absolute;
+    top: 105px;
+    right: 35px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+  }
+
 .congratulations-modal-content p {
   font-size: 12px;
   color: var(--mustard);
@@ -396,13 +408,14 @@ body {
 
 /* CONGRATULATIONS SUBMIT-BUTTON */
 .submit-button {
-  width: 80px;
-  height: 39px;
-  background: url("../images/kingdom-snap-press-submit.png") no-repeat; 
-  cursor: pointer;
-  margin: auto;
-  margin-top: 5px;
-}
+    width: 80px;
+    height: 39px;
+    background: url("../images/kingdom-snap-press-submit.png") no-repeat; /* Set the image as the background */
+    background-size: cover;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 5px;
+  }
 
 .open {
   display: block;
@@ -471,8 +484,7 @@ body {
 /* ====================== MEDIA QUERIES  ====================== */
 
 /* Small Devices (Portrait Phones and Small Tablets) */
-@media (min-width: 376px) and (max-width: 429px) {
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
+ @media (min-width: 376px) and (max-width: 429px) {
 
   .congratulations-modal-content p {
     font-size: 14px;
@@ -490,10 +502,9 @@ body {
     height: 39px;
     margin-top: 5px;
   }
-}
+} 
 /* Small Devices (Portrait Phones and Small Tablets) */
-@media (min-width: 430px) and (max-width: 525px) {
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
+ @media (min-width: 430px) and (max-width: 525px) {
 
   .congratulations-modal-content p {
     font-size: 14px;
@@ -511,10 +522,9 @@ body {
     height: 48px;
     margin-top: 9px;
   }
-}
+} 
 /* Small Devices (Portrait Phones and Small Tablets) */
-@media (min-width: 526px) and (max-width: 626px) {
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
+ @media (min-width: 526px) and (max-width: 626px) {
 
   .congratulations-modal-content p {
     font-size: 18px;
@@ -532,10 +542,9 @@ body {
     height: 63px;
     margin-top: 9px;
   }
-}
+} 
 /* Small Devices (Portrait Phones and Small Tablets)  */
-@media (min-width: 627px) and (max-width: 767px) {
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
+ @media (min-width: 627px) and (max-width: 767px) {
 
   .congratulations-modal-content p {
     font-size: 22px;
@@ -554,11 +563,10 @@ body {
     height: 73px;
     margin-top: 8px;
   }
-}
+} 
 
 /* Medium Devices (Phones, Tablets, and Small Laptops) */
-@media (min-width: 768px) and (max-width: 860px) {
-  /* ====================== START-SCREEN BUTTONS ====================== */
+ @media (min-width: 768px) and (max-width: 860px) {
   .start-screen-button-container {
     gap: 90px;
     height: 17%;
@@ -573,7 +581,6 @@ body {
     width: 250px;
     height: 118px;
   }
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
 
   .congratulations-modal-content p {
     font-size: 25px;
@@ -592,10 +599,9 @@ body {
     height: 87px;
     margin-top: 15px;
   }
-}
+} 
 /* Medium Devices (Phones, Tablets, and Small Laptops) */
-@media (min-width: 861px) and (max-width: 1023px) {
-  /* ====================== START-SCREEN BUTTONS ====================== */
+ @media (min-width: 861px) and (max-width: 1023px) {
   .start-screen-button-container {
     gap: 90px;
     height: 17%;
@@ -610,7 +616,6 @@ body {
     width: 250px;
     height: 118px;
   }
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
 
   .congratulations-modal-content {
     max-width: 900px;
@@ -633,11 +638,10 @@ body {
     height: 97px;
     margin-top: 15px;
   }
-}
+} 
 
 /* Large Devices (Tablets, Laptops, and Desktops) */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  /* ====================== START-SCREEN BUTTONS ====================== */
+ @media (min-width: 1024px) and (max-width: 1279px) {
   .start-screen-button-container {
     gap: 90px;
     height: 17%;
@@ -652,7 +656,6 @@ body {
     width: 250px;
     height: 118px;
   }
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
 
   .congratulations-modal-content {
     max-width: 900px;
@@ -675,11 +678,10 @@ body {
     height: 97px;
     margin-top: 15px;
   }
-}
+} 
 
 /* Extra Large Devices (Desktops) */
-@media (min-width: 1280px) and (max-width: 1439px) {
-  /* ====================== START-SCREEN BUTTONS ====================== */
+ @media (min-width: 1280px) and (max-width: 1439px) {
   .start-screen-button-container {
     gap: 90px;
     height: 17%;
@@ -694,7 +696,6 @@ body {
     width: 250px;
     height: 118px;
   }
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
 
   .congratulations-modal-content {
     max-width: 900px;
@@ -717,11 +718,10 @@ body {
     height: 97px;
     margin-top: 15px;
   }
-}
+} 
 
 /* Ultra Large Devices (Larger Desktops and 4K Screens) */
-@media (min-width: 1440px) and (max-width: 1599px) {
-  /* ====================== START-SCREEN BUTTONS ====================== */
+ @media (min-width: 1440px) and (max-width: 1599px) {
   .start-screen-button-container {
     gap: 90px;
     height: 17%;
@@ -737,7 +737,6 @@ body {
     height: 118px;
   }
 
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
 
   .congratulations-modal-content {
     max-width: 900px;
@@ -760,11 +759,10 @@ body {
     height: 97px;
     margin-top: 15px;
   }
-}
+} 
 
 /* Extra Extra Large Devices */
-@media (min-width: 1600px) and (max-width: 1919px) {
-  /* ====================== START-SCREEN BUTTONS ====================== */
+ @media (min-width: 1600px) and (max-width: 1919px) {
   .start-screen-button-container {
     gap: 90px;
     height: 17%;
@@ -784,7 +782,6 @@ body {
     max-width: 700px;
     max-height: 100%;
   }
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
 
   .congratulations-modal-content {
     max-width: 900px;
@@ -807,7 +804,6 @@ body {
     height: 97px;
     margin-top: 15px;
   }
-  /* ====================== GAMEBOARD & CARDS  ====================== */
 
   .memory-game {
     max-width: 800px;
@@ -849,11 +845,10 @@ body {
     bottom: 50px;
     left: 50px;
   }
-}
+} 
 
 /* Extra Extra Extra Large Devices */
-@media (min-width: 1920px) and (max-width: 2239px) {
-  /* ====================== START-SCREEN BUTTONS ====================== */
+ @media (min-width: 1920px) and (max-width: 2239px) {
   .start-screen-button-container {
     gap: 90px;
     height: 17%;
@@ -873,7 +868,6 @@ body {
     max-width: 700px;
     max-height: 100%;
   }
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
 
   .congratulations-modal-content {
     max-width: 900px;
@@ -897,7 +891,6 @@ body {
     margin-top: 15px;
   }
 
-  /* ====================== GAMEBOARD & CARDS  ====================== */
 
   .memory-game {
     max-width: 800px;
@@ -939,11 +932,10 @@ body {
     bottom: 50px;
     left: 50px;
   }
-}
+} 
 
 /* Extra Extra Extra Extra Large Devices */
-@media (min-width: 2240px) and (max-width: 2560px) {
-  /* ====================== START-SCREEN BUTTONS ====================== */
+ @media (min-width: 2240px) and (max-width: 2560px) {
   .start-screen-button-container {
     gap: 90px;
     height: 17%;
@@ -959,7 +951,6 @@ body {
     height: 118px;
   }
 
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
 
   .congratulations-modal-content {
     max-width: 900px;
@@ -983,7 +974,6 @@ body {
     margin-top: 15px;
   }
 
-  /* ====================== GAMEBOARD & CARDS  ====================== */
 
   .memory-game {
     max-width: 1200px;
@@ -1026,11 +1016,10 @@ body {
     bottom: 50px;
     left: 50px;
   }
-}
+} 
 
 /* Laptops - 1366px */
-@media (min-width: 1000px) and (max-width: 1440px) {
-  /* ====================== START-SCREEN BUTTONS ====================== */
+ @media (min-width: 1000px) and (max-width: 1440px) {
   .start-screen-button-container {
     gap: 40px;
     height: 17%;
@@ -1050,7 +1039,6 @@ body {
     max-width: 600px;
     max-height: 100%;
   }
-  /* ====================== GAMEBOARD & CARDS  ====================== */
   .memory-game {
     max-width: 600px;
     max-height: 50%;
@@ -1059,9 +1047,8 @@ body {
     flex-wrap: wrap;
     perspective: 1000px;
   }
-}
-@media (min-width: 1440px) and (max-width: 1440px) {
-  /* ====================== START-SCREEN BUTTONS ====================== */
+} 
+ @media (min-width: 1440px) and (max-width: 1440px) {
   .start-screen-button-container {
     gap: 40px;
     height: 17%;
@@ -1081,7 +1068,6 @@ body {
     max-width: 600px;
     max-height: 100%;
   }
-  /* ====================== GAMEBOARD & CARDS  ====================== */
   .memory-game {
     max-width: 600px;
     max-height: 50%;
@@ -1090,11 +1076,10 @@ body {
     flex-wrap: wrap;
     perspective: 1000px;
   }
-}
+} 
 
 /* Larger Screens (Above Common Resolutions) */
-@media (min-width: 2561px) {
-  /* ====================== START-SCREEN BUTTONS ====================== */
+ @media (min-width: 2561px) {
   .start-screen-button-container {
     gap: 90px;
     height: 17%;
@@ -1110,7 +1095,6 @@ body {
     height: 118px;
   }
 
-  /* ====================== CONGRATULATIONS MODAL  ====================== */
 
   .congratulations-modal-content {
     max-width: 900px;
@@ -1133,7 +1117,6 @@ body {
     height: 97px;
     margin-top: 15px;
   }
-  /* ====================== GAMEBOARD & CARDS  ====================== */
 
   .memory-game {
     max-width: 1200px;
@@ -1174,10 +1157,10 @@ body {
     bottom: 50px;
     left: 50px;
   }
-}
+} 
 
 /* Landscape Orientation for Mobile and Tablets */
-@media only screen and (max-device-width: 768px) /* Max width for tablets and small screens */ and (orientation: landscape) {
+@media only screen and (max-width: 768px) /* Max width for tablets and small screens */ and (orientation: landscape) {
   .game-logo {
     max-width: 300px;
     max-height: 100%;
