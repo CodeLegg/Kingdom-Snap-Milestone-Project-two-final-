@@ -31,27 +31,38 @@ The validator showed no warning for the game.html page.
 
 ![leaderboard](README-images/leaderboardval.png)
 
-The validator showed no warning for the leaderboard.html page.
+The validator showed no warning but showed one unused variable for the leaderboard.html page.
+
 
 ![css](README-images/cssval.png)
 
-The validator showed no warning for the leaderboard.html page.
+The validator showed no warning for the CSS
+
+***
 
 ![Alt text](README-images/soundjsval.png)
 
 The validator showed no warning for the gamesound.js script.
 
+***
+
 ![Alt text](README-images/scriptjsval.png)
 
 The validator showed no warning for the script.js script.
+
+***
 
 ![Alt text](README-images/leaderboardjsval.png)
 
 The validator showed no warning for the leaderboard.js script.
 
+***
+
 ![Alt text](README-images/gamejsval.png)
 
 The validator showed no warning for the game-script.js script.
+
+***
 
 ## Lighthouse
 
@@ -65,6 +76,8 @@ The validator showed no warning for the game-script.js script.
 
 ![accessibility](README-images/lighthouse-accessibility.png)
 
+***
+
 ## Browser Compatibility
 
 | Browser        |                     Version                      | Bugs |
@@ -75,12 +88,15 @@ The validator showed no warning for the game-script.js script.
 
 | Device                   | Operating system | Bugs  |
 | -------------            |:-------------:   | -----:|
-| iPhone 14                | iOS 16.3.1       | None  |
-| iPhone 14 pro            | iOS 16.0         | None  |
-| Samsung galaxy S22 Ultra | Android 13       | None  |
+| iPhone 12                | iOS 16.3.1       | None  |
+| iPhone 14 pro MAX            | iOS 16.0         | None  |
+| Iphone 6/7/8 | iOS 16.3.1       | None  |
 
-#Automatic-Testing
+***
+
+## Automatic-Testing
 
 
+## Manual-Testing
 
-#Manual-Testing
+## Responsive-Testing
