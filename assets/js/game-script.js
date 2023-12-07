@@ -43,7 +43,10 @@ function checkForMatch() {
     if (allCards.length === matchedCards.length) {
       stopTimer();
       openCongratulationsModal();
+      displayFeedbackMessage("Congratulations! All cards are matched!");
       // Additional actions when all cards are matched
+    } else {
+      displayFeedbackMessage("Match found! Keep going!");
     }
   } else {
     // This is for timer-based checking
@@ -52,7 +55,23 @@ function checkForMatch() {
       unflipCards();
       lockBoard = false; // Reset the lockBoard only after the delay
     }, 800);
+    displayFeedbackMessage("No match. Try again.");
   }
+}
+
+function displayFeedbackMessage(message) {
+  const feedbackMessageElement = document.getElementById("feedback-message");
+  feedbackMessageElement.textContent = message;
+
+  // You can also add styling or animations to the feedback message if desired
+  // For example, you can add a CSS class to trigger animations.
+  feedbackMessageElement.classList.add("show-feedback-message");
+
+  // After a certain duration, remove the feedback message and the added class
+  setTimeout(() => {
+    feedbackMessageElement.textContent = "";
+    feedbackMessageElement.classList.remove("show-feedback-message");
+  }, 800); // Adjust the duration as needed (2000 milliseconds = 2 seconds)
 }
 
 function disableCards() {
