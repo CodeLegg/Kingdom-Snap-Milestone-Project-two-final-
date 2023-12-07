@@ -78,3 +78,9 @@ The validator showed no warning for the game-script.js script.
 | iPhone 14                | iOS 16.3.1       | None  |
 | iPhone 14 pro            | iOS 16.0         | None  |
 | Samsung galaxy S22 Ultra | Android 13       | None  |
+
+#Automatic-Testing
+
+
+
+#Manual-Testing
