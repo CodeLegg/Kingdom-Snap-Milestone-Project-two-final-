@@ -94,7 +94,7 @@ function displayFeedbackMessage(message) {
   setTimeout(() => {
     feedbackMessageElement.textContent = "";
     feedbackMessageElement.classList.remove("show-feedback-message");
-  }, 6000);
+  }, 1000);
 }
 
 function disableCards() {
