@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Roboto', sans-serif;
 }
 /* COLOUR VARIABLES */
 :root {
@@ -491,6 +491,19 @@ body {
 #leaderboard-table tbody tr:hover {
   background-color: #e6e6e6;
 }
+
+.gold {
+    background-color: gold;
+  }
+  
+  .silver {
+    background-color: silver;
+  }
+  
+  .bronze {
+    background-color: bronze;
+  }
+  
 
 .bottom-container {
   display: flex;

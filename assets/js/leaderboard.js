@@ -36,6 +36,8 @@ function populateLeaderboard() {
     row.appendChild(nameCell);
     row.appendChild(timeCell);
 
+    
+
     tableBody.appendChild(row);
   });
 }

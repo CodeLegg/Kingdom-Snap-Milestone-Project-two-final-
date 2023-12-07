@@ -73,7 +73,7 @@ function checkForMatch() {
 
     // Display the special message when the counter reaches three
     if (unsuccessfulAttempts === 3) {
-      displayFeedbackMessage("The kingdom will not fall!", 1000);
+      displayFeedbackMessage("The Kingdom Stands Strong!", 1000);
       // Reset the counter after displaying the special message
       unsuccessfulAttempts = 0;
     } else {
@@ -94,7 +94,7 @@ function displayFeedbackMessage(message) {
   setTimeout(() => {
     feedbackMessageElement.textContent = "";
     feedbackMessageElement.classList.remove("show-feedback-message");
-  }, 1500);
+  }, 6000);
 }
 
 function disableCards() {
