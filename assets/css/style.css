@@ -167,18 +167,30 @@ body {
   align-items: center; 
 }
 
-#feedback-message{
+#feedback-message {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;
-    color: var(--ketchup);
+    color: white;
     text-align: center;
     z-index: 1000;
+    background-color: var(--ketchup);
+    border-radius: 30px;
+    border: solid 3px var(--mustard);
+    white-space: nowrap;
+    padding: 10px; 
+    display: none; 
 }
+
+#feedback-message.show-feedback-message {
+    display: block; /* Display the element when it has the show-feedback-message class */
+}
+
+
 
 .memory-game-container {
   max-width: 100%; 
@@ -577,6 +589,19 @@ body {
     margin-top: 8px;
   }
 } 
+
+/* #feedback-message{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--ketchup);
+    text-align: center;
+    z-index: 1000;
+} */
 
 /* Medium Devices (Phones, Tablets, and Small Laptops) */
  @media (min-width: 768px) and (max-width: 860px) {

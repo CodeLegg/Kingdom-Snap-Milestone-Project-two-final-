@@ -31,6 +31,9 @@ function startTimerIfNotRunning() {
   }
 }
 
+let unsuccessfulAttempts = 0;
+let consecutiveMatches = 0;
+
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
@@ -43,35 +46,55 @@ function checkForMatch() {
     if (allCards.length === matchedCards.length) {
       stopTimer();
       openCongratulationsModal();
-      displayFeedbackMessage("Congratulations! All cards are matched!");
-      // Additional actions when all cards are matched
     } else {
-      displayFeedbackMessage("Match found! Keep going!");
+      displayFeedbackMessage("Match found! Keep going!", 1000); // Adjust duration as needed
+
+      // Check for three consecutive matches
+      consecutiveMatches++;
+      if (consecutiveMatches === 3) {
+        displayFeedbackMessage("The King is getting worried!", 1000);
+        consecutiveMatches = 0; // Reset the counter after displaying the special message
+      }
     }
+
+    // Reset the counter when a match is found
+    unsuccessfulAttempts = 0;
   } else {
     // This is for timer-based checking
     lockBoard = true; // prevent further card flips until the comparison is done
     setTimeout(() => {
       unflipCards();
       lockBoard = false; // Reset the lockBoard only after the delay
-    }, 800);
-    displayFeedbackMessage("No match. Try again.");
+    }, 1200);
+
+    // Increment the counter for unsuccessful attempts
+    unsuccessfulAttempts++;
+    consecutiveMatches = 0; // Reset consecutiveMatches counter for non-matching attempts
+
+    // Display the special message when the counter reaches three
+    if (unsuccessfulAttempts === 3) {
+      displayFeedbackMessage("The kingdom will not fall!", 1000);
+      // Reset the counter after displaying the special message
+      unsuccessfulAttempts = 0;
+    } else {
+      // Display the standard "No match. Try again." message for unsuccessful attempts
+      displayFeedbackMessage("No match. Try again.", 1000);
+    }
   }
 }
+
 
 function displayFeedbackMessage(message) {
   const feedbackMessageElement = document.getElementById("feedback-message");
   feedbackMessageElement.textContent = message;
 
-  // You can also add styling or animations to the feedback message if desired
-  // For example, you can add a CSS class to trigger animations.
   feedbackMessageElement.classList.add("show-feedback-message");
 
   // After a certain duration, remove the feedback message and the added class
   setTimeout(() => {
     feedbackMessageElement.textContent = "";
     feedbackMessageElement.classList.remove("show-feedback-message");
-  }, 800); // Adjust the duration as needed (2000 milliseconds = 2 seconds)
+  }, 1500);
 }
 
 function disableCards() {
@@ -210,4 +233,3 @@ function saveToLocalStorage(playerName, timeData) {
   // Save the updated data back to local storage
   localStorage.setItem("leaderboard", JSON.stringify(leaderboardData));
 }
-
