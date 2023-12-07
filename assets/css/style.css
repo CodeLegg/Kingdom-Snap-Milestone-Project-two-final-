@@ -167,6 +167,19 @@ body {
   align-items: center; 
 }
 
+#feedback-message{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--ketchup);
+    text-align: center;
+    z-index: 1000;
+}
+
 .memory-game-container {
   max-width: 100%; 
   width: 100%;
