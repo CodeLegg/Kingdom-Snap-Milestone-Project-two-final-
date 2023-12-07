@@ -162,7 +162,7 @@ function updateTimerDisplay() {
 //INFO MODAL SCRIPT
 
 const infoButton = document.getElementById("infobutton");
-const infoModal = document.getElementById("infoModal");
+const infoModal = document.getElementById("infomodal");
 
 // Show the modal when the info button is clicked
 infoButton.addEventListener("click", () => {
