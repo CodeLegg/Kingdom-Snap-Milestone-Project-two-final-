@@ -13,12 +13,28 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 ## Table of Contents
 
 - [User Experience](#user-experience)
+  * [User Stories](#user-stories)
+
 - [Design](#design)
-- [Features](#features)
+  * [Colour Scheme](#colour-scheme)
+  * [Typography](#typography)  
+  * [Wireframes](#wireframes-sketches)
+  * [Layout & Features](#layout-&-features)
+  * [Audio](#audio)
+  * [Future Implements](#future-implements)
+  * [Accessibility](#accessibility)
+
 - [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Frameworks, Libraries & Programs Used](#frameworks-libraries-&-programs-used)
+
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgments](#acknowledgments)
+  
 
 ## User Experience (UX)
 
@@ -64,7 +80,7 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 ![Alt text](README-images/wireframe-leaderboard.png)
 
 
-## Layout
+## Layout & Features
 **The website is designed to be interactive with various stages:**
  
 ### Introduction: A Majestic Unveiling
@@ -100,7 +116,7 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 
 ### Feedback Messages: Matching or Not Matching the Royal Pairs
 
-In the unpredictable realm of *Kingdom Snap*, the feedback messages are there, delivering insights and encouragement and on your noble quest.
+- In the unpredictable realm of *Kingdom Snap*, the feedback messages are there, delivering insights and encouragement and on your noble quest.
 
 **Match Found! Keep Going!**
   - If users match a pair of cards correctly, they receive a 'Match Found! Keep Going!' message.
@@ -228,6 +244,9 @@ opens a gateway to an auditory journey that mirrors the grandiosity of medieval 
 
 - Leaderboard positions could be colour coded with Gold, Silver and Bronze for First, Second and Third.
 
+### Accessibility
+- The site has scored highly in terms of accessibility, I have included alt text descriptions for all images to provide context and information to visually impaired users.
+
 ## Technologies Used
 
 ### Languages Used
@@ -249,7 +268,7 @@ opens a gateway to an auditory journey that mirrors the grandiosity of medieval 
 
 
 ## Testing
-Testing process can be found [here](TESTING.md)
+- Testing process can be found [here](TESTING.md)
 
 
 
@@ -257,10 +276,10 @@ Testing process can be found [here](TESTING.md)
 
 **How was this site deployed?**
 
-The website was initially deployed on GitHub pages.
+- The website was initially deployed on GitHub pages.
 
 **Deploying on GitHub Pages**  
-To deploy the website on GitHub Pages, the following steps were followed:
+- To deploy the website on GitHub Pages, the following steps were followed:
 
 **Create a new repository on GitHub**  
 - Add the necessary files to the repository.
@@ -283,15 +302,15 @@ To deploy the website on GitHub Pages, the following steps were followed:
 - This will bring up a page with details of the repository, fill in boxes as required.
 - Click 'create fork'.  
 
-For further guidance [click here](https://docs.github.com/en/get-started/quickstart/fork-a-repo)  
+- For further guidance [click here](https://docs.github.com/en/get-started/quickstart/fork-a-repo)  
 
-Forking this repository will allow changes to be made without affecting the original repository.
+- Forking this repository will allow changes to be made without affecting the original repository.
 
 ## Credits
 
 ### Content
 
-Freecodecamp.org tutorial [Link to the tutorial]()
+- Freecodecamp.org tutorial [Link to the tutorial]()
 
 
 ## Media
@@ -304,3 +323,4 @@ Freecodecamp.org tutorial [Link to the tutorial]()
 
 - Code Institute training material
 - Freecodecamp.org
+- Juliia Mentor
