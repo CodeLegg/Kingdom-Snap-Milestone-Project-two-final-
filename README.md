@@ -21,7 +21,7 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
   * [Wireframes](#wireframes-sketches)
   * [Layout & Features](#layout-&-features)
   * [Audio](#audio)
-  * [Future Implements](#future-implements)
+  * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
 - [Technologies Used](#technologies-used)
@@ -225,7 +225,7 @@ Within the royal realm of the Kingdom Snap memory game, a set of distinguished b
 
 - Together, these symbols form a royal tapestry, interwoven with the spirit of medieval lore. As you traverse the game, each element whispers tales of a bygone era, inviting players to not only match cards but to immerse themselves in the symbolic realm of Kingdom Snap.
 
-## Audio
+### Audio
 
 
 **Audio: A Harmonious Tapestry**
