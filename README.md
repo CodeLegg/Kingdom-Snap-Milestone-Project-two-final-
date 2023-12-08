@@ -82,6 +82,7 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 
 
 ### Layout & Features
+
 **The website is designed to be interactive with various stages:**
  
 ## Introduction: A Majestic Unveiling
