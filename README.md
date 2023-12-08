@@ -261,7 +261,7 @@ opens a gateway to an auditory journey that mirrors the grandiosity of medieval 
 
 - [GitHub](https://github.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Google Chrome Dev Tools](chrome://version/)
+- [Google Chrome Dev Tools](https://www.google.com/)
 - [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator/campaign/pricing.html?mv=search&mv=search&mv2=paidsearch&sdid=GMCWY69B&ef_id=7f919b153c29137ac9cffe7ab14557ad:G:s&s_kwcid=AL!3085!10!79371087385138!79371161872161)
 - [W3schools](https://www.w3schools.com/)
 - [Google Fonts](https://fonts.google.com/)
