@@ -36,7 +36,7 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
   * [Acknowledgments](#acknowledgments)
   
 
-## User Experience (UX)
+### User Experience (UX)
 
 ### User Stories
 
@@ -48,7 +48,7 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 
 4. With a fervent interest in medieval history, I am on a quest for a captivating memory game that transcends ordinary entertainment. Centered around regal elements such as shields, swords, coins, chests, scripts, and helmets, the prospect of challenging my memory skills excites me. This game's unique blend of a demanding experience and a time constraint promises an exhilarating journey, perfectly aligning with my profound appreciation for medieval lore.
 
-## Design
+### Design
 
 ### Colour Scheme
 
@@ -59,6 +59,7 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 - The choice of a diverse range of greys serves to complement and ground the vibrant hues, adding a sophisticated touch to the overall aesthetic. This thoughtfully curated color scheme not only enhances the visual appeal but also harmonizes seamlessly with the royal king theme, creating a captivating and immersive experience for users as they navigate the medieval-inspired memory game.
 
 ### Typography
+
 ![Custom-Font](README-images/font.png)
 
 ![Roboto](README-images/font-2.png)
@@ -83,13 +84,13 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 ### Layout & Features
 **The website is designed to be interactive with various stages:**
  
-### Introduction: A Majestic Unveiling
+## Introduction: A Majestic Unveiling
   
 - Embark on a journey through time and royalty as the loading screen gracefully unfolds over 8 seconds. Anticipation builds as the intricacies of the medieval realm come to life. A masterpiece in the making, this loading screen sets the stage for an immersive experience. When the curtain finally rises, a radiant "Start" button emerges, inviting you to commence your royal adventure. Only then, with the button's elegant fade-in, does the true journey into the kingdom's memory game commence.
 
 ![Intro](README-images/intro.png)
 
-### Start Screen: A Royal Gateway
+## Start Screen: A Royal Gateway
 
 - Step into the grandeur of the Kingdom Snap memory game with a visually striking start screen. A regal emblem, adorned with the Kingdom Snap logo, takes center stage, embodying the essence of medieval splendor. Before you, two distinguished buttons await—Play Game and Leaderboards—each promising a unique path into the heart of the kingdom.
 
@@ -101,7 +102,7 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 
 ![startscreen](README-images/startscreen.png)
 
-### Game Board: Unveiling the Royal Pairs
+## Game Board: Unveiling the Royal Pairs
 
 - Embark on a noble quest within the Kingdom Snap memory game, where the game board unveils a regal tapestry adorned with twelve majestic cards. As you step into this arena of memory and strategy, the objective becomes clear: match the royal pairs hidden behind the cards.
 
@@ -114,7 +115,7 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 ![gameboard](README-images/game.png)
 
 
-### Feedback Messages: Matching or Not Matching the Royal Pairs
+## Feedback Messages: Matching or Not Matching the Royal Pairs
 
 - In the unpredictable realm of *Kingdom Snap*, the feedback messages are there, delivering insights and encouragement and on your noble quest.
 
@@ -144,7 +145,7 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 
 
   
-### Game Buttons: Navigate the Kingdom's Buttons
+## Game Buttons: Navigate the Kingdom's Buttons
 
 Within the royal realm of the Kingdom Snap memory game, a set of distinguished buttons awaits your command, each playing a crucial role in your noble quest.
 
@@ -176,7 +177,7 @@ Within the royal realm of the Kingdom Snap memory game, a set of distinguished b
 
 ![timer](README-images/timer.png)
  
-### Completion: The Royal Triumph
+## Completion: The Royal Triumph
 
 - Behold, noble contender, as your journey through the medieval realm culminates in a momentous Completion! The air is charged with the exhilaration of victory as you stand on the precipice of the royal triumph. But fear not, for this is not merely an end—it is a proclamation of your prowess in the Kingdom Snap memory game.
 
@@ -191,7 +192,7 @@ Within the royal realm of the Kingdom Snap memory game, a set of distinguished b
 ![congratulation](README-images/congrat-modal.png) 
   
 
-### Leaderboard: Ascend to Royal Glory
+## Leaderboard: Ascend to Royal Glory
 
 - Step into the hallowed halls of the Kingdom Snap's royal leaderboard an esteemed space where the names of memory champions echo through time. This is not merely a list; it is a testament to the prowess of those who have conquered the memory challenges of the medieval realm.
 
@@ -204,7 +205,7 @@ Within the royal realm of the Kingdom Snap memory game, a set of distinguished b
 ![leaderboard](README-images/leaderboard.png)
 
 
-### Symbology: Unveiling the Royal Tapestry
+## Symbology: Unveiling the Royal Tapestry
 
 - Embark on a journey through the rich tapestry of Kingdom Snap's symbology a tapestry woven with the threads of medieval elegance and regal significance. Each element, meticulously chosen, contributes to the immersive experience, transforming the game into more than a mere challenge—it becomes a digital odyssey through the kingdom's symbolism.
 
