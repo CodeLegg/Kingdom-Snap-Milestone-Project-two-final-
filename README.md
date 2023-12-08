@@ -12,7 +12,7 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 
 ## Table of Contents
 
-- [User Experience](#user-experience)
+- [User Experience](#user-experience-(UX))
   * [User Stories](#user-stories)
 
 - [Design](#design)
