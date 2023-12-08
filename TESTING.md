@@ -12,6 +12,12 @@ This site has been tested using the following testing procedures
 
 - [Manual Testing](#Manual-Testing)
 
+- [Functionality](#Functionality)
+
+- [Usability](#Usability)
+
+- [Responsiveness](#Responsiveness)
+
 - [Bug Reporting](#Bug-Reporting)
 
 ## Code Validation
@@ -100,7 +106,7 @@ During the manual testing, I tested the sites functionality, usability and respo
 
 #### Functionality
 
-**Quiz Logic**
+**Memory Game Logic**
 In the Kingdom Snap realm-themed memory game, the synergy of thematic symbols and engaging feedback messages elevates the gaming experience. As players delve into the challenge of matching kingdom items, the timer adds an element of urgency to the quest for pairs. The game logic ensures that when a successful match is made, a rewarding message appears, fostering a sense of achievement and motivating players to press on. On the flip side, if the cards don't align, a helpful message gently steers players in the right direction, encouraging them to refine their recall skills. The special feature of recognizing players for consecutively matching three pairs in a row adds an exciting dynamic, celebrating their exceptional memory prowess. Meanwhile, a witty message surfaces when three consecutive attempts yield no matches, inspiring perseverance in the face of adversity. This carefully balanced combination of thematic elements and feedback messages transforms the Kingdom Snap memory game into a mentally stimulating and delightful journey through the rich realms of memory and strategy.
 
 Index.html
