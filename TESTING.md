@@ -6,11 +6,9 @@ This site has been tested using the following testing procedures
 
 - [Code Validation](#Code-validation)
 
-- [Lighthouse Testing](#Lighthouse-Testing)
+- [Lighthouse Testing](#Lighthouse)
 
 - [Browser Compatibility](#Browser-Compatibility)
-
-- [Automatic Testing](#Automatic-Testing)
 
 - [Manual Testing](#Manual-Testing)
 
