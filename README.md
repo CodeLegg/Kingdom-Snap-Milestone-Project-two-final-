@@ -71,7 +71,7 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 
 - The fonts employed, with their distinct styles and personalities, have been carefully chosen to resonate with the project's theme. This intentional selection not only reflects a keen eye for design but also ensures a cohesive and captivating visual narrative. As users engage with the content, the chosen fonts play a pivotal role in conveying a sense of elegance and authenticity, further elevating the overall design aesthetics.
 
-### Wireframe Sketches
+### Wireframes Sketches
 
 ![loading](README-images/wireframe-loadingscreen.png)
 ![start-screen](README-images/wireframe-startscreen.png)
