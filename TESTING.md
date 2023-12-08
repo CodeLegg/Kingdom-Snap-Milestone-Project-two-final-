@@ -132,12 +132,12 @@ Leaderboard.html
 
 
 
-**Usability**  
+## Usability
 
 - Some users felt more levels could have been used.
 
 
-**Responsiveness** 
+## Responsiveness 
 
 
 
