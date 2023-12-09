@@ -314,7 +314,7 @@ opens a gateway to an auditory journey that mirrors the grandiosity of medieval 
 
 ### Content
 
-- Freecodecamp.org tutorial [Link to the tutorial]()
+- Freecodecamp.org tutorial [Link to the tutorial](https://www.youtube.com/watch?v=ZniVgo8U7ek)
 
 
 ## Media
