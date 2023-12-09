@@ -19,14 +19,14 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
   * [Colour Scheme](#colour-scheme)
   * [Typography](#typography)  
   * [Wireframes](#wireframes-sketches)
-  * [Layout & Features](#layout-&-features)
+  * [Layout & Features](#layout--features)
   * [Audio](#audio)
   * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
 - [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries-&-programs-used)
+  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -78,14 +78,16 @@ This is Milestone Project 2 for a Level 5 Diploma in Web Application Development
 ![game-board](README-images/wireframe-gameboard.png)
 ![info](README-images/wireframe-gameboard-infomodal.png)
 ![congratulations](README-images/wireframe-gameboard-modal.png)
-![Alt text](README-images/wireframe-leaderboard.png)
+![leaderboard](README-images/wireframe-leaderboard.png)
 
 
-## Layout & Features
+### Layout & Features
 
-**The website is designed to be interactive with various stages:**
+<!-- **The website is designed to be interactive with various stages:** -->
+
+
  
-### Introduction: A Majestic Unveiling
+## Introduction: A Majestic Unveiling
   
 - Embark on a journey through time and royalty as the loading screen gracefully unfolds over 8 seconds. Anticipation builds as the intricacies of the medieval realm come to life. A masterpiece in the making, this loading screen sets the stage for an immersive experience. When the curtain finally rises, a radiant "Start" button emerges, inviting you to commence your royal adventure. Only then, with the button's elegant fade-in, does the true journey into the kingdom's memory game commence.
 
