@@ -30,8 +30,8 @@ function toggleSound() {
 }
 
 // Attach event listeners to the volume buttons
-var volumeOn = document.getElementById("volumeon");
-var volumeOff = document.getElementById("volumeoff");
+let volumeOn = document.getElementById("volumeon");
+let volumeOff = document.getElementById("volumeoff");
 
 // Initial display setup
 updateButtonDisplay();
