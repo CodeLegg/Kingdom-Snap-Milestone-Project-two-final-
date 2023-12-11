@@ -24,13 +24,15 @@
     <header>
 
         <div class="game-container">
-
+            <!-- Left button container -->
             <div class="leftcontainer">
                 <div class="column">
+
                     <audio id="soundtrack" src="assets/sound/kingdom-snap-soundtrack.mp3" loop></audio>
 
                     <div class="volumeon" id="volumeon">
                     </div>
+
                     <div class="volumeoff" id="volumeoff">
                     </div>
 
@@ -41,89 +43,115 @@
 
                     <div class="refreshbutton" id="refreshbutton">
                     </div>
+
                 </div>
             </div>
-
+            <!-- Feedback Div -->
             <div id="feedback-message"></div>
-
+            <!-- Game board & Cards -->
             <div class="memory-game-container" id="memory-game-container">
                 <div class="memory-game">
+
                     <div class="memory-card" data-framework="sheild">
                         <img class="front-face" src="assets/images/front-face-1.png" alt="king">
                         <img class="back-face" src="assets/images/backface-badge.png" alt="Sheild">
                     </div>
+
                     <div class="memory-card" data-framework="sheild">
                         <img class="front-face" src="assets/images/front-face-1.png" alt="king">
                         <img class="back-face" src="assets/images/backface-badge.png" alt="Sheild">
                     </div>
+
                     <div class="memory-card" data-framework="helmet">
                         <img class="front-face" src="assets/images/front-face-2.png" alt="king">
                         <img class="back-face" src="assets/images/backface-badge.png" alt="helmet">
                     </div>
+
                     <div class="memory-card" data-framework="helmet">
                         <img class="front-face" src="assets/images/front-face-2.png" alt="king">
                         <img class="back-face" src="assets/images/backface-badge.png" alt="helmet">
                     </div>
+
                     <div class="memory-card" data-framework="coin">
                         <img class="front-face" src="assets/images/front-face-3.png" alt="king">
                         <img class="back-face" src="assets/images/backface-badge.png" alt="Coin">
                     </div>
+
                     <div class="memory-card" data-framework="coin">
                         <img class="front-face" src="assets/images/front-face-3.png" alt="king">
                         <img class="back-face" src="assets/images/backface-badge.png" alt="Coin">
                     </div>
+
                     <div class="memory-card" data-framework="chest">
                         <img class="front-face" src="assets/images/front-face-4.png" alt="King">
                         <img class="back-face" src="assets/images/backface-badge.png" alt="Chest">
                     </div>
+
                     <div class="memory-card" data-framework="chest">
                         <img class="front-face" src="assets/images/front-face-4.png" alt="King">
                         <img class="back-face" src="assets/images/backface-badge.png" alt="Chest">
                     </div>
+
                     <div class="memory-card" data-framework="sword">
                         <img class="front-face" src="assets/images/front-face-5.png" alt="King">
                         <img class="back-face" src="assets/images/backface-badge.png" alt="Sword">
                     </div>
+
                     <div class="memory-card" data-framework="sword">
                         <img class="front-face" src="assets/images/front-face-5.png" alt="King">
                         <img class="back-face" src="assets/images/backface-badge.png" alt="Sword">
                     </div>
+
                     <div class="memory-card" data-framework="script">
                         <img class="front-face" src="assets/images/front-face-6.png" alt="King">
                         <img class="back-face" src="assets/images/backface-badge.png" alt="script">
                     </div>
+
                     <div class="memory-card" data-framework="script">
                         <img class="front-face" src="assets/images/front-face-6.png" alt="King">
                         <img class="back-face" src="assets/images/backface-badge.png" alt="script">
                     </div>
+
                 </div>
             </div>
-
+            <!-- Right button container -->
             <div class="rightcontainer">
                 <div class="column">
 
-                    <div class="timer" id="timer">
-                    </div>
+                    <!-- Timer Div -->
+                    <div class="timer" id="timer"></div>
 
+                    <!-- Info Modal & Button -->
                     <div class="infobutton" id="infobutton">
+
                         <div class="modal" id="infomodal">
+
                             <div class="modal-content">
                                 <span class="close" id="closemodal"></span>
                             </div>
+
                         </div>
+
                     </div>
 
                 </div>
             </div>
-
+            <!-- Congratulations Modal  -->
             <div class="congratulations-modal" id="congratulations-modal">
+
                 <span class="close" id="close-congratulations-modal"></span>
+
                 <div class="congratulations-modal-content">
+
                     <div class="input-container">
+
                         <p>You completed the game in: <span id="modal-time"></span>.
                             <br> Enter your name:</p>
+
                         <input type="text" id="playerName" placeholder="Your Name">
+
                         <br>
+
                         <div class="submit-button" id="submitTime"></div>
                     </div>
                 </div>
