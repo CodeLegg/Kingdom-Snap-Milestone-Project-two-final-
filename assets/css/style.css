@@ -127,7 +127,8 @@ body {
   justify-content: center;
 }
 .game-logo {
-  max-width: 100%;
+  max-width: 600px;
+  width: 100%;
   max-height: 100%;
 }
 
@@ -607,7 +608,7 @@ body {
 /* Medium Devices (Phones, Tablets, and Small Laptops) */
 @media (min-width: 768px) and (max-width: 860px) {
   .start-screen-button-container {
-    gap: 90px;
+    gap: 40px;
     height: 17%;
   }
 
@@ -646,7 +647,7 @@ body {
 /* Medium Devices (Phones, Tablets, and Small Laptops) */
 @media (min-width: 861px) and (max-width: 1023px) {
   .start-screen-button-container {
-    gap: 90px;
+    gap: 40px;
     height: 17%;
   }
 
@@ -690,10 +691,8 @@ body {
 /* Large Devices (Tablets, Laptops, and Desktops) */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .start-screen-button-container {
-    gap: 90px;
+    gap: 40px;
     height: 17%;
-    margin-bottom: 0rem;
-
   }
 
   .play-button {
@@ -732,7 +731,7 @@ body {
 /* Extra Large Devices (Desktops) */
 @media (min-width: 1280px) and (max-width: 1439px) {
   .start-screen-button-container {
-    gap: 90px;
+    gap: 40px;
     height: 17%;
   }
 
@@ -776,7 +775,7 @@ body {
 /* Ultra Large Devices (Larger Desktops and 4K Screens) */
 @media (min-width: 1440px) and (max-width: 1599px) {
   .start-screen-button-container {
-    gap: 90px;
+    gap: 40px;
     height: 17%;
   }
 
@@ -820,7 +819,7 @@ body {
 /* Extra Extra Large Devices */
 @media (min-width: 1600px) and (max-width: 1919px) {
   .start-screen-button-container {
-    gap: 90px;
+    gap: 40px;
     height: 17%;
   }
 
@@ -835,7 +834,7 @@ body {
   }
 
   .game-logo {
-    max-width: 700px;
+    max-width:600px;
     max-height: 100%;
   }
 
@@ -910,7 +909,7 @@ body {
 /* Extra Extra Extra Large Devices */
 @media (min-width: 1920px) and (max-width: 2239px) {
   .start-screen-button-container {
-    gap: 90px;
+    gap: 40px;
     height: 17%;
   }
 
@@ -1000,8 +999,13 @@ body {
 /* Extra Extra Extra Extra Large Devices */
 @media (min-width: 2240px) and (max-width: 2560px) {
   .start-screen-button-container {
-    gap: 90px;
+    gap: 40px;
     height: 17%;
+  }
+
+  .game-logo {
+    max-width: 1000px;
+    max-height: 100%;
   }
 
   .play-button {
@@ -1165,10 +1169,14 @@ body {
 /* Larger Screens (Above Common Resolutions) */
 @media (min-width: 2561px) {
   .start-screen-button-container {
-    gap: 90px;
+    gap: 40px;
     height: 17%;
   }
-
+  
+  .game-logo {
+    max-width: 1000px;
+    max-height: 100%;
+  }
   .play-button {
     width: 250px;
     height: 118px;
