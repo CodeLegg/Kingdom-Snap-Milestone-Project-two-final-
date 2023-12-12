@@ -111,6 +111,7 @@ body {
   text-align: center; /* Centers the child element horizontally */
   position: absolute;
 }
+
 .start-button {
   width: 150px;
   height: 70px;
@@ -846,7 +847,7 @@ body {
   }
 
   .game-logo {
-    max-width:600px;
+    max-width: 600px;
     max-height: 100%;
   }
 
@@ -1202,7 +1203,7 @@ body {
     gap: 40px;
     height: 17%;
   }
-  
+
   .game-logo {
     max-width: 1000px;
     max-height: 100%;
