@@ -2,15 +2,16 @@
 const startButton = document.getElementById("start-button");
 const Loading = document.getElementById("loading-text");
 const Loaded = document.getElementById("loaded-text");
+const buttonContainer = document.getElementById("button-container");
 
 // Add a class for initial styles (opacity: 0, pointer-events: none)
 startButton.classList.add("hidden");
-
+buttonContainer.classList.add("hidden");
 Loaded.classList.add("hidden");
 
 // After a delay of 8000 milliseconds (8 seconds)
 setTimeout(function () {
-    // Remove the class to update styles (opacity: 1, pointer-events: auto)
+    // Remove the class to update styles (opacity: 0, pointer-events: none)
     Loading.classList.add("hidden");
 }, 7000);
 
@@ -25,6 +26,7 @@ setTimeout(function () {
 setTimeout(function () {
     // Remove the class to update styles (opacity: 1, pointer-events: auto)
     startButton.classList.remove("hidden");
+    buttonContainer.classList.remove("hidden");
     // Add a class for initial styles (opacity: 1, transition: opacity 2s ease;)
     startButton.classList.add("fade-in");
   }, 8000);
