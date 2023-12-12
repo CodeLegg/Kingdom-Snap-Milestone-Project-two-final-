@@ -692,6 +692,8 @@ body {
   .start-screen-button-container {
     gap: 90px;
     height: 17%;
+    margin-bottom: 0rem;
+
   }
 
   .play-button {
