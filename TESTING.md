@@ -107,24 +107,25 @@ During the manual testing, I tested the sites functionality, usability and respo
 #### Functionality
 
 **Memory Game Logic**
+
 In the Kingdom Snap realm-themed memory game, the synergy of thematic symbols and engaging feedback messages elevates the gaming experience. As players delve into the challenge of matching kingdom items, the timer adds an element of urgency to the quest for pairs. The game logic ensures that when a successful match is made, a rewarding message appears, fostering a sense of achievement and motivating players to press on. On the flip side, if the cards don't align, a helpful message gently steers players in the right direction, encouraging them to refine their recall skills. The special feature of recognizing players for consecutively matching three pairs in a row adds an exciting dynamic, celebrating their exceptional memory prowess. Meanwhile, a witty message surfaces when three consecutive attempts yield no matches, inspiring perseverance in the face of adversity. This carefully balanced combination of thematic elements and feedback messages transforms the Kingdom Snap memory game into a mentally stimulating and delightful journey through the rich realms of memory and strategy.
 
-Index.html
+**Index.html**
 - All buttons worked as expected.  
 - Loading bar animation worked as expected.    
 
-startscreen.html
+**Startscreen.html**
 - All buttons worked as expected.  
 - Images work as expected
 
-game.html
+**Game.html**
 - Timer worked as expected.
 - Feedback messages work as expected.  
 - All buttons worked as expected.
 - All modals worked as expected.  
 
 
-Leaderboard.html
+**Leaderboard.html**
  - All buttons worked as expected.  
 - The users name is displayed as expected.  
 - The users time is displayed as expected.   
@@ -231,30 +232,76 @@ I used the following break points for responsiveness.
 
 ## Bug Reporting
 
-**Bug: Inconsistent Font Sizes on Medium Devices**
+**Resolved Bug: Inconsistent Font Sizes on Medium Devices**
 
 - Issue: On devices with screen widths ranging from 768px to 1023px, the font sizes for congratulatory messages and player names were inconsistent.
 Resolution: Adjusted the CSS styles for these devices to ensure uniform font sizes and spacing.
 
-**Bug: Overlapping Buttons on Extra Large Devices**
+**Resolved Bug: Overlapping Buttons on Extra Large Devices**
 
 - Issue: Buttons in the start-screen button container were overlapping on devices with screen widths between 1600px and 1919px.
 Resolution: Modified the gap property in the CSS styles to provide adequate spacing, preventing button overlap.
 
-**Bug: Timer Display Issue on 1440p Screens**
+**Resolved Bug: Timer Display Issue on 1440p Screens**
 
 - Issue: The timer display was not rendering correctly on screens with a resolution of 1440p (2560px width), leading to a distorted appearance.
 Resolution: Adjusted the timer styles for screens with a width of 1440px to ensure proper rendering.
 
-**Bug: Ineffective Fade-In Effect**
+**Resolved Bug: Ineffective Fade-In Effect**
 
 - Issue: Attempted to implement a fade-in effect for certain elements, but it did not work consistently across all devices, causing visual inconsistencies.
 Resolution: After unsuccessful attempts to address the fade-in issue and considering its impact on the user experience, the decision was made to remove the fade-in effect entirely. This ensures a smoother and more reliable user interface.
 
-**Bug: Player Name Input Field Alignment**
+**Resolved Bug: Player Name Input Field Alignment**
 
 - Issue: On devices with screen widths between 430px and 525px, the player name input field was not aligned correctly, causing a visual misalignment.
 Resolution: Adjusted the CSS styles for the player name input field to ensure proper alignment on these specific devices.
+
+
+**Potential Unresolved Bug Report - Inconsistent Feedback Message Heights Across Various Screen Sizes**
+
+**Description**
+
+When using the application on different screen sizes, I have observed an inconsistency in the display height of feedback messages. This issue affects the overall user experience, as the placement of the feedback message varies across devices, leading to confusion and potential usability issues.
+
+**Steps to Reproduce**
+
+1. Launch the application on devices with various screen sizes.
+2. Trigger a feedback message, either through user interaction or system-generated events.
+3. Observe the placement of the feedback message on the screen.
+
+**Expected Behavior**
+
+The feedback message should consistently appear at a standardized height across all supported screen sizes, ensuring a uniform and predictable user interface.
+
+**Actual Behavior**
+
+The feedback message is displayed at different heights on different screen sizes, leading to an inconsistent user experience.
+
+**Screenshots**
+
+![Bug1](Feedbackbug.png)
+
+![Bug2](Feedbackbug2.png)
+
+![Bug3](Feedbackbug3.png)
+
+- **Devices** 
+
+All screensizes are inconsistent with posistion of feedback message.
+
+**Impact**
+
+This issue could impact the overall user experience and could lead to confusion and frustration among users, especially those using the application across different devices.
+
+**Reproducibility**
+
+The issue is reproducible by observing the feedback message positioning on various screen sizes. The inconsistency is likely linked to the CSS properties used for positioning. Given additional time in my schedule, I plan to review and adjust the CSS properties responsible for the feedback message positioning to ensure a consistent and responsive layout across different devices.
+
+**Additional Note**
+
+I find this bug to be minor, but it is very annoying. If I had more time to review and correct the bug, I would do so. However, with the submission date approaching and the Christmas holiday nearing, I have not found the time to address it. Please consider this in prioritizing the resolution of the bug.
+
 
 
 
